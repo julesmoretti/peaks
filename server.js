@@ -5,7 +5,7 @@ var _ = require('underscore');
 var async = require('async');
 
 var app = express();
-var ig = requite('config.js');
+var ig = require('./config.js');
 
 app.use(express.static("."));
 app.use(bodyParser());
