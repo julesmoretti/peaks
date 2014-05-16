@@ -11,8 +11,8 @@ app.use(express.static("."));
 app.use(bodyParser());
 app.use(morgan());
 
-app.get("/", function (req, res) {
-  res.status(200).sendfile("globe-search/index.html");
+app.get("/", function(req, res) {
+  res.status(200).sendfile("peaks/index.html");
 });
 
 app.listen(3000);
